@@ -49,8 +49,7 @@ public class AddFatherFragment extends DialogFragment implements View.OnClickLis
         edt_mobile = rootView.findViewById(R.id.edt_mobile);
         edt_mobile.setEnabled(true);
 
-        ((ImageView)rootView.findViewById(R.id.img_remove)).setVisibility(View.GONE);
-        ((ImageView)rootView.findViewById(R.id.img_edit)).setVisibility(View.GONE);
+        ((ViewGroup)rootView.findViewById(R.id.action_buttons_holder)).setVisibility(View.GONE);
 
         if (getArguments() != null) {
             updateFather = (Father) getArguments().getSerializable(Constants.FATHER_INFO);
