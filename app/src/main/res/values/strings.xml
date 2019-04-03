@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Unrwa Apsence Students</string>
+    <string name="title_activity_search_result">SearchResult</string>
+    <string name="login">Login</string>
+    <string name="title_activity_add_students">AddStudentsActivity</string>
+
+    <array name="gender">
+        <item>أنثى</item>
+        <item>ذكر</item>
+    </array>
+
+    <integer-array name="genderIDs">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+
+    <array name="Grades">
+        <item>الأول</item>
+        <item>الثاني</item>
+        <item>الثالث</item>
+        <item>الرابع</item>
+        <item>الخامس</item>
+        <item>السادس</item>
+        <item>السابع</item>
+        <item>الثامن</item>
+        <item>التاسع</item>
+        <item>العاشر</item>
+        <item>الحادي عشر</item>
+        <item>الثاني عشر</item>
+    </array>
+
+    <integer-array name="GradesIDs">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </integer-array>
+    <string name="title_activity_fathers">أوليا الأمور</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

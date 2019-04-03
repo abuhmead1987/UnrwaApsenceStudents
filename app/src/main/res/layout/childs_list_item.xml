@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="6dp"
+    android:padding="5dp"
+    android:background="@drawable/bg_list_view_item"
+    android:layoutDirection="rtl">
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/img_stdImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_weight="0.3"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_stdName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/tv_stdNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="uNumber" />
+
+            <TextView
+                android:id="@+id/tv_stdGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grade" />
+
+            <TextView
+                android:id="@+id/tv_stdGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/edit_delete_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"/>
+
+
+    </TableRow>
+
+</TableLayout>
