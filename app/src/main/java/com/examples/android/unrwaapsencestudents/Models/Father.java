@@ -1,6 +1,7 @@
 package com.examples.android.unrwaapsencestudents.Models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Father implements Serializable {
@@ -10,7 +11,7 @@ public class Father implements Serializable {
     /**
      * Students IDs (Unrwa ID)
      */
-    private HashMap<String,Boolean> children =new HashMap<>();
+    private ArrayList children =new ArrayList();
 
     public Father(){}//for firebase
     public Father(String name, String ID, String email, String familyID, String mobileNum) {
@@ -20,7 +21,7 @@ public class Father implements Serializable {
         this.familyID = familyID;
         this.mobileNum = mobileNum;
     }
-    public Father(String name, String ID, String email, String familyID, String mobileNum, HashMap<String,Boolean> children) {
+    public Father(String name, String ID, String email, String familyID, String mobileNum, ArrayList children) {
         Name = name;
         this.ID = ID;
         this.email = email;
@@ -61,11 +62,11 @@ public class Father implements Serializable {
         this.familyID = familyID;
     }
 
-    public HashMap<String,Boolean> getChildren() {
+    public ArrayList getChildren() {
         return children;
     }
 
-    public void setChildren(HashMap<String,Boolean> children) {
+    public void setChildren(ArrayList children) {
         this.children = children;
     }
 

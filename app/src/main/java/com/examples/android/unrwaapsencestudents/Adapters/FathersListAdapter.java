@@ -92,7 +92,6 @@ public class FathersListAdapter extends FirebaseRecyclerAdapter<Father,FathersLi
                         fatherGet.addOnSuccessListener(new OnSuccessListener<Father>() {
                             @Override
                             public void onSuccess(Father father) {
-                                AddFatherFragment dialogFragment = new AddFatherFragment();
                                 Intent i=new Intent(context, AddStudentsActivity.class);
                                 i.putExtra(Constants.FATHER_INFO, father );
                                context.startActivity(i);

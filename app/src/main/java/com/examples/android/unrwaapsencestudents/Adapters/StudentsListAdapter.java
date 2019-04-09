@@ -1,7 +1,9 @@
 package com.examples.android.unrwaapsencestudents.Adapters;
 
+import android.content.Context;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,7 +20,7 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 public class StudentsListAdapter extends FirebaseRecyclerAdapter<Student,StudentsListAdapter.ItemViewHolder> {
-    public StudentsListAdapter(@NonNull FirebaseRecyclerOptions<Student> options) {
+    public StudentsListAdapter(@NonNull FirebaseRecyclerOptions<Student> options, Context context, FragmentManager fb) {
         super(options);
     }
     @Override

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layoutDirection="rtl"
-    android:orientation="vertical">
+    android:layoutDirection="rtl">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +28,7 @@
                     android:text="اسم الأب" />
 
                 <TextView
-                    android:id="@+id/editText"
+                    android:id="@+id/tv_fatherName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
@@ -49,19 +48,19 @@
                     android:text="رقم العائلة" />
 
                 <TextView
-                    android:id="@+id/editText4"
+                    android:id="@+id/tv_FamilyID"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
-                    android:ems="10"/>
+                    android:ems="10" />
             </TableRow>
         </TableLayout>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_margin="6dp">
+            android:layout_margin="6dp"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -71,6 +70,7 @@
 
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/studentsList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="android.support.v7.widget.LinearLayoutManager" />

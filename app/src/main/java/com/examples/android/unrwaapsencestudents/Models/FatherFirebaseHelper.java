@@ -74,4 +74,10 @@ public class FatherFirebaseHelper {
         return tcs.getTask();
     }
 
+    public void addChild(String childUNumber, String familyID) {
+        fatherDBRef.child(familyID).child("Children").child(childUNumber).setValue(true);
+    }
+    public void removeChild(String childUNumber, String familyID) {
+        fatherDBRef.child(familyID).child("Children").child(childUNumber).removeValue();
+    }
 }

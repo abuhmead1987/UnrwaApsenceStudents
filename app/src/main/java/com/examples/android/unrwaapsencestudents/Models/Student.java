@@ -1,6 +1,8 @@
 package com.examples.android.unrwaapsencestudents.Models;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
     private String Name,uNumber, imagePath,Grade,Gender;
     public Student(){}//For firebase
     public Student(String name, String uNumber, String imagePath, String grade, String gender) {
