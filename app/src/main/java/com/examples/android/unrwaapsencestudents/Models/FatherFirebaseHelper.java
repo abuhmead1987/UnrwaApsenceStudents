@@ -39,24 +39,6 @@ public class FatherFirebaseHelper {
     public void removeFather(String familyID){
         fatherDBRef.child(familyID).removeValue();
     }
-//    Father father;
-//    public Father getFatherInfo(String familyID){
-//        father=new Father();
-//        fatherDBRef.child(familyID);
-//        fatherDBRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                for (DataSnapshot postSnapshot:dataSnapshot.getChildren()) {
-//                    father=postSnapshot.getValue(Father.class);
-//                }
-//            }
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-//        return father;
-//    }
     public Task<Father> getFatherInfo(String username) {
         final TaskCompletionSource<Father> tcs = new TaskCompletionSource<>();
         fatherDBRef.child(username)
